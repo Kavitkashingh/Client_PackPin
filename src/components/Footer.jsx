@@ -4,6 +4,7 @@ import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
 import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai'
 import { useSelector } from 'react-redux'
 import { AiFillShopping, AiFillHeart } from 'react-icons/ai'
+import lgo from '../assets/logo.jpg' 
 
 const Footer = () => {
 
@@ -17,7 +18,8 @@ const Footer = () => {
             <div className='w-[95%] grid grid-row-2 mx-auto border-b py-5 md-lg:pb-10 sm:pb-6 '>
                 <div className='sm:w-full flex  mb-3 place-content-between '>
                     <div className=''>
-                        <img className=' h-[30px]' src="http://localhost:3000/images/logo.png" alt="logo" />
+                        {/* <img className=' h-[30px]' src="http://localhost:3000/images/logo.png" alt="logo" /> */}
+                        <img className=' h-[30px]' src={lgo} alt="logo" />
                     </div>
                     <div className=''>
                         <button className='border  border-black xs:px-5 xs:py-1 px-[50px] py-2 rounded-full hover:border-none hover:bg-red-500 hover:text-white' >Contact</button>
