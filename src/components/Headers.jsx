@@ -7,7 +7,7 @@ import GradingIcon from '@mui/icons-material/Grading';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import HelpIcon from '@mui/icons-material/Help';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import lgo from '../assets/logo.jpg' 
+import lgo from '../assets/banner/logo.png'
 
 import Box from '@mui/material/Box';
 
@@ -118,7 +118,7 @@ const Headers = ({ handleLoginClick }) => {
                                     <span><FaList /></span>
                                 </div>
                                 <Link to="/">
-                                    <img src={lgo} className="h-[35px] xs:ml-2" alt="logo"/>
+                                    <img src={lgo} className="h-[35px] xs:ml-2" alt="logo" />
                                 </Link>
                                 <div
                                     onClick={redirect_card_page}
@@ -294,12 +294,12 @@ const Headers = ({ handleLoginClick }) => {
                         } hidden md-lg:block w-screen h-screen bg-[rgba(0,0,0,0.5)] top-0 left-0 z-20`}
                 ></div>
                 <div
-                    className={`w-[150px] z-[9999] transition-all duration-200 fixed  ${showShidebar ? "-left-[300px]" : "left-0"
+                    className={`w-[200px] z-[9999] transition-all duration-200 fixed  ${showShidebar ? "-left-[300px]" : "left-0"
                         } top-0 overflow-y-auto bg-white h-screen py-6 px-5`}
                 >
                     <div className="flex justify-start flex-col gap-5">
                         <Link to="/">
-                            <img src="http://localhost:3000/images/logo.png" className="h-[30px]" alt="logo" />
+                            <img src={lgo} className="h-[30px]" alt="logo" />
                         </Link>
                         <div className="flex justify-star">
                             <div className="relative  flex justify-center items-center cursor-pointer rounded-lg">
@@ -399,6 +399,12 @@ const Headers = ({ handleLoginClick }) => {
                                         }`}
                                 >
                                     Contact
+                                </Link>
+                                <Link className=' cursor-pointer text-slate-600 justify-center items-center rounded-lg  py-2' to='/bulk'>
+                                    <span >Bulk enquiry</span>
+                                </Link>
+                                <Link className='flex cursor-pointer text-slate-600 justify-center items-center gap-2 rounded-lg  py-2' to='/becomeseller'>
+                                    <span className=''>Become a sellera </span>
                                 </Link>
                             </li>
                         </ul>

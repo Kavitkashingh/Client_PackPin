@@ -173,7 +173,7 @@ const Details = () => {
                 <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto pb-16'>
                     <div className='grid grid-cols-2 md-lg:grid-cols-1   gap-8'>
                         <div className=' ml-8'>
-                            <div className='p-5 border h-[500px] w-[500px] items-center'>
+                            <div className='p-5 border xs:h-[100px] xs:w-[100px] h-[500px] w-[500px] items-center'>
                                 <img src={image ? image : product.images?.[0]} alt="" />
                             </div>
                             <div className='py-3 w-[500px]'>

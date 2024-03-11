@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
 import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai'
 import { useSelector } from 'react-redux'
 import { AiFillShopping, AiFillHeart } from 'react-icons/ai'
-import lgo from '../assets/logo.jpg' 
+import lgo from '../assets/banner/logo.png' 
 
 const Footer = () => {
 
@@ -53,6 +53,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    
                     <div className='lg:w-9/12 xs:hidden'>
                         <div className='flex justify-center sm:justify-center sm:mt-6 w-full'>
                             <div>
