@@ -11,6 +11,11 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Margin } from '@mui/icons-material';
+import aa from '../assets/banner/1.jpg';
+import aaa from '../assets/banner/4.jpg';
+import as from '../assets/banner/6.jpg';
+import sa from '../assets/banner/2.jpg';
+
 
 const Banner = () => {
     // const { categories } = useSelector(state => state.home); // Ensure this matches your actual state structure
@@ -84,9 +89,10 @@ const Banner = () => {
                 {/* Carousel and Slider */}
                 <div className='mb-3 '>
                     <Carousel autoPlay={true} infinite={true} arrows={false} showDots={true} responsive={responsiveCarousel}>
-                        {[1, 2, 3, 4].map((num, index) => (
+                        {[aa, aaa, as, sa].map((num, index) => (
                             <Link key={index} to='#'>
-                                <img src={`http://localhost:3000/images/banner/${num}.jpg`} alt="" className='object-cover rounded-2xl' />
+                                {/* <img src={`http://localhost:3000/images/banner/${num}.jpg`} alt="" className='object-cover rounded-2xl' /> */}
+                                <img src={num} alt="" className='object-cover rounded-2xl' />
                             </Link>
                         ))}
                     </Carousel>

@@ -117,7 +117,7 @@ const Headers = ({ handleLoginClick }) => {
                                     <span><FaList /></span>
                                 </div>
                                 <Link to="/">
-                                    <img src="http://localhost:3000/images/logo.png" className="h-[35px] xs:ml-2" alt="logo"/>
+                                    <img src="../assets/banner/logo.png" className="h-[35px] xs:ml-2" alt="logo"/>
                                 </Link>
                                 <div
                                     onClick={redirect_card_page}
