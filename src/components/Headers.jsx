@@ -7,6 +7,7 @@ import GradingIcon from '@mui/icons-material/Grading';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import HelpIcon from '@mui/icons-material/Help';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import lgo from '../assets/logo.jpg' 
 
 import Box from '@mui/material/Box';
 
@@ -117,7 +118,7 @@ const Headers = ({ handleLoginClick }) => {
                                     <span><FaList /></span>
                                 </div>
                                 <Link to="/">
-                                    <img src="../assets/logo.jpg" className="h-[35px] xs:ml-2" alt="logo"/>
+                                    <img src={lgo} className="h-[35px] xs:ml-2" alt="logo"/>
                                 </Link>
                                 <div
                                     onClick={redirect_card_page}
